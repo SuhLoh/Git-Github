@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icon.png"/>
+    <title>Formulário</title>
+</head>
+<body>
+
+    <figure>
+        <img src="img/icon.png" alt="Foto Login" width="150px"/>
+    </figure>
+
+    <h1>Logar</h1>
+
+    <div id="formulario">
+
+        <form action="index.html" method="POST">
+
+            <div id="nome">
+                <label for="nome">Preencha com seu nome</label>
+                <input 
+                    type="text" 
+                    name="nome" 
+                    id="nome" 
+                    size="30"
+                    maxlength="50"
+                />
+            </div>
+
+            <br>
+
+            <div id="endereco">
+                <label for="endereco">Preencha com seu endereço</label>
+                <input 
+                    type="text" 
+                    name="endereco" 
+                    id="endereco" 
+                    size="30"
+                    maxlength="50"
+                />
+                <input
+                    type="number" 
+                    name="numero" 
+                    id="numero" 
+                    min="1"
+                    max="100"
+                    step="1"
+                />
+           </div>
+
+           <br>
+
+           <div id="textarea">
+                <label for="textarea">Observações</label>
+                <textarea
+                    name="obs" 
+                    id="obs" 
+                    cols="50"
+                    rows="2">
+                </textarea>
+                
+            </div>
+            
+            <br>
+
+            <div id="email">
+                <label for="email">Preencha com seu email</label>
+                <input 
+                    type="email" 
+                    name="email" 
+                    id="email" 
+                    placeholder="ex: suzana@gmail.com"
+                />
+            </div>
+
+            <br>
+
+            <div id="senha">
+                <label for="senha">Preencha com uma senha</label>
+                <input 
+                    type="password" 
+                    name="senha" 
+                    id="senha" 
+                    placeholder="senha"
+                />
+            </div>
+
+            <br>
+
+            <div id="arquivo">
+                <label for="arquivo">Deposite aqui o arquivo que desejar</label>
+                <input 
+                    type="file" 
+                    name="arquivo" 
+                    id="arquivo"
+                    multiple 
+                />
+            </div>
+
+            <br>
+
+            <div id="marca2">
+                <p>Marque uma ou mais alternativas</p>
+                <input 
+                    type="checkbox" 
+                    name="marca1" 
+                    id="marca1"
+                    value="agil" 
+                />
+                <label for="marca1">Ágil </label>
+
+                <input 
+                  type="checkbox" 
+                  name="marca2" 
+                  id="marca2"
+                  value="eficiente" 
+                />
+                <label for="marca2">Eficiente </label>
+            
+                <input 
+                type="checkbox" 
+                name="marca3" 
+                id="marca3"
+                value="aplicado" 
+            />
+            <label for="marca3">Aplicado</label>
+            </div>
+
+            <br>
+
+            <div id="marca2">
+                <p>Marque uma alternativa</p>
+                <input 
+                    type="radio" 
+                    name="alternativa" 
+                    id="valor1"
+                    value="Gostei" 
+                />
+                <label for="valor11">Gostei</label>
+
+                <input 
+                  type="radio" 
+                  name="alternativa" 
+                  id="valor2"
+                  value="Mais ou menos" 
+                />
+                <label for="valor2">Mais ou menos </label>
+            
+                <input 
+                   type="radio" 
+                   name="alternativa" 
+                   id="valor3"
+                   value="Nao gostei" 
+                />
+                <label for="marca3">Não gostei</label>
+            </div>
+
+            <br>
+            <br>
+
+
+            <div id="data">
+                <label for="data">Data:</label>
+                <input 
+                    type="date" 
+                    name="data" 
+                    id="data" 
+                />
+            </div>
+            
+            <br>
+            <br>
+
+            <div id="opcoes">
+                <label for="opcoes">Veja as opções e selecione a que deseja</label>
+                <select>
+                   <option value="SP">SP</option> 
+                   <option value="PA">PA</option> 
+                   <option value="MT">MT</option> 
+                   <option value="SC">SC</option> 
+                   <option value="BA">BA</option> 
+
+               </select> 
+            </div>
+
+            <br>
+            <br>
+
+            <div id="botao-enviar">
+                <input 
+                    type="submit" 
+                    name="botao-enviar" 
+                    id="botao-enviar" 
+                    value="Enviar"
+                />
+            </div>
+            
+            <button type="reset" id="limpar" name="limpar">Limpar</button>
+        </form>
+
+
+    </div>
+</body>
+</html>
